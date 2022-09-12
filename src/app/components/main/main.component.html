@@ -1,0 +1,23 @@
+<div class="main-container">
+
+
+  <div class="insertInfo">
+    <label for="title">Title: </label>
+    <input type="text" [(ngModel)]="newTitle" placeholder="Title">
+
+    <label for="author">Author: </label>
+    <input name="author" type="text" [(ngModel)]="newAuthor" placeholder="Author">
+
+    <button type="button" (click)="submitPost()">Create POST</button>
+
+  </div>
+
+
+  <div class="post-container" *ngIf="posts">
+    <div class="single-post-container" *ngFor="let post of posts">
+      <app-single-post [post] = "post"></app-single-post>
+      <button type="button" (click)="submitPost()">Comment</button>
+    </div>
+
+  </div>
+</div>

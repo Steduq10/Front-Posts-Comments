@@ -1,0 +1,51 @@
+h2 {
+  text-align: center;
+
+}
+
+label {
+  color: #435960;
+  font-weight: bold;
+}
+input {
+  font-size: 1em;
+  padding: .5rem;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.main-container{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.post-container{
+ /* display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px; 
+}
+
+.single-post-container{
+  border-radius: 10px;
+  min-height: 200px;
+  padding: 20px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-color: #D4E6F1 ;
+
+
+}
