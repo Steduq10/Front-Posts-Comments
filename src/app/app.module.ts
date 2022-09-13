@@ -11,6 +11,8 @@ import { MainComponent } from './components/main/main.component';
 import { SinglePostComponent } from './components/single-post/single-post.component';
 import { SingleCommentComponent } from './components/single-comment/single-comment.component';
 import { PostsPageComponent } from './posts-page/posts-page.component';
+import { CommentsPageComponent } from './comments-page/comments-page.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,12 @@ import { PostsPageComponent } from './posts-page/posts-page.component';
     MainComponent,
     SinglePostComponent,
     SingleCommentComponent,
-    PostsPageComponent
+    PostsPageComponent,
+    CommentsPageComponent
   ],
   imports: [
     BrowserModule,
-  //  AppRoutingModule,
+    AppRoutingModule,
     FormsModule,
     HttpClientModule
   ],

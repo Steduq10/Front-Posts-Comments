@@ -21,6 +21,15 @@ button {
   font-weight: bold;
 }
 
+a {
+  margin-top: 20px;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 .main-container{
   width: 90%;
   max-width: 1200px;
@@ -35,7 +44,7 @@ button {
   flex-wrap: wrap;*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .single-post-container{

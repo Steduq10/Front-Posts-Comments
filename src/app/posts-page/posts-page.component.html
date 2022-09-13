@@ -4,7 +4,11 @@
       <div class="single-post-content">
           <h3 class="post-title">Title: {{post.title}}</h3>
           <p class="post-author"> Author: {{post.author}}</p>
-          <button type="button" >Comment</button>
+          <!--<button type="button" >Comment</button>-->
+          <br>
+          <nav>
+            <a routerLink="/comment/{{post}}">Comment</a>
+          </nav>
       </div>
 
     </div>
